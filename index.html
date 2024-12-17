@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Expected Value Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id="overlay">
+        <div class="overlay-content">
+            <h2>🎲 What is Expected Value? 🎲</h2>
+            <p>To traders and sports betters, Expected Value is a way to evaluate trades and bets. Here's a simple calculator to help with that.</p>
+            <p>Insert how much you might make, how much you risk losing and the chances that each event occurs.</p>
+            <button onclick="closeOverlay()">Aye Aye!</button>
+        </div>
+    </div>
+
+    <div class="calculator">
+        <h1>Expected Value Calculator</h1>
+        
+        <div class="input-group">
+            <label>Potential Gain ($):</label>
+            <input type="number" id="gainAmount" placeholder="Enter potential gain amount">
+        </div>
+        
+        <div class="input-group">
+            <label>Gain Probability (0-1):</label>
+            <input type="number" id="gainProbability" min="0" max="1" step="0.01" placeholder="Enter probability of gain (e.g., 0.6)">
+        </div>
+        
+        <div class="input-group">
+            <label>Potential Loss ($):</label>
+            <input type="number" id="lossAmount" placeholder="Enter potential loss amount">
+        </div>
+        
+        <div class="input-group">
+            <label>Loss Probability (0-1):</label>
+            <input type="number" id="lossProbability" min="0" max="1" step="0.01" placeholder="Enter probability of loss (e.g., 0.4)">
+        </div>
+
+        <button onclick="calculateExpectedValue()">Calculate Expected Value</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
