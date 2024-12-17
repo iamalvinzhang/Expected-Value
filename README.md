@@ -1,2 +1,2 @@
 # Expected-Value
-Expected Value
+Simple Expected Value Calculator
